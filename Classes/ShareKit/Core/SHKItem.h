@@ -128,7 +128,11 @@ typedef enum
 @property (nonatomic) UIPrintInfoOutputType printOutputType;
 
 /* SHKMail */
+
+typedef NSString * (^SHKMailBodyTemplateBlock)(SHKItem *shkItem);
+
 @property (nonatomic, retain) NSArray *mailToRecipients;
+@property (nonatomic, copy) SHKMailBodyTemplateBlock mailTemplateBlock;
 @property BOOL isMailHTML;
 @property CGFloat mailJPGQuality; 
 @property BOOL mailShareWithAppSignature; //default NO. Appends "Sent from <appName>"

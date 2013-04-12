@@ -45,7 +45,7 @@
 @synthesize URL, URLContentType, image, title, text, tags, data, mimeType, filename;
 @synthesize custom;
 @synthesize printOutputType;
-@synthesize mailToRecipients, mailJPGQuality, isMailHTML, mailShareWithAppSignature;
+@synthesize mailToRecipients, mailTemplateBlock, mailJPGQuality, isMailHTML, mailShareWithAppSignature;
 @synthesize facebookURLSharePictureURI, facebookURLShareDescription;
 @synthesize textMessageToRecipients;
 
@@ -66,6 +66,7 @@
 	[custom release];
 
 	[mailToRecipients release];
+    [mailTemplateBlock release];
 	[facebookURLSharePictureURI release];
 	[facebookURLShareDescription release];
   
